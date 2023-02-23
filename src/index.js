@@ -48,7 +48,7 @@ module.exports = function toReadable (number) {
     itog = ob3[str[0]] + ' ' + ob1[str[1]];
   };
   if (str.length === 3 && str[1] === '0' && str[2] === '0') {
-    itog = ob1[str[0]] + ' hundred ';
+    itog = ob1[str[0]] + ' hundred';
   };
   if (str.length === 3 && str[1] === '0' && str[2] !== '0') {
     itog = ob1[str[0]] + ' hundred ' + ob1[str[2]];
