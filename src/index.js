@@ -25,11 +25,24 @@ module.exports = function toReadable (number) {
     ['8']: "eighteen",
     ['9']: "nineteen",
   };
+  const ob3 = {
+    ['2']: "twenty",
+    ['3']: "thirty",
+    ['4']: "fourty",
+    ['5']: "fifty",
+    ['6']: "sixty",
+    ['7']: "seventy",
+    ['8']: "eighty",
+    ['9']: "ninety",
+  };
   if (str.length === 1) {
     itog = ob1[str[0]];
   };
   if (str.length === 2 && str[0] === '1') {
     itog = ob2[str[1]];
+  };
+  if (str.length === 2 && str[0] !== '1' && str[1] === '0') {
+    itog = ob3[str[0]];
   };
   return itog;
 }
