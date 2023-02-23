@@ -28,7 +28,7 @@ module.exports = function toReadable (number) {
   if (str.length === 1) {
     itog = ob1[str[0]];
   };
-  if (str.length === 2) {
+  if (str.length === 2 && str[0] === 1) {
     itog = ob2[str[1]];
   };
   return itog;
