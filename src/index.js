@@ -13,7 +13,7 @@ module.exports = function toReadable (number) {
     ['8']: "eight",
     ['9']: "nine",
   };
-  if (str.lengh === 1) {
+  if (str.length === 1) {
     itog = ob1[str[0]];
   }
   return itog;
