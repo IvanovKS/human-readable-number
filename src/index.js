@@ -44,5 +44,8 @@ module.exports = function toReadable (number) {
   if (str.length === 2 && str[0] !== '1' && str[1] === '0') {
     itog = ob3[str[0]];
   };
+  if (str.length === 2 && str[0] !== '1' && str[1] !== '0') {
+    itog = ob3[str[0]] + ' ' + ob1[str[0]];
+  };
   return itog;
 }
